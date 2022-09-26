@@ -1,0 +1,60 @@
+
+:root {
+  --control: hsl(193, 100%, 32%);
+  --control-border: hsl(193, 100%, 22%);
+
+  --lime_green: hsl(63, 88%, 46%);
+  --sky_blue: hsl(182, 67%, 75%);
+  --coral_pink: hsl(358, 100%, 73%);
+  --fresh_green: hsl(78, 100%, 37%);
+  --marine_turquoise: hsl(176, 82%, 38%);
+  --royal_purple: hsl(312, 100%, 31%);
+  --grass_green: hsl(145, 100%, 26%);
+
+  --chalk_white: hsl(0, 0%, 100%);
+  --ink_black: hsl(0, 0%, 0%);
+  --mist_grey: hsl(180, 3%, 88%);
+  --graphite_grey: hsl(193, 5%, 33%);
+
+  --target: hsl(80, 87%, 27%);
+  --warning: hsl(41, 87%, 47%);
+  --avoid: hsl(348, 83%, 47%);
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+  justify-content: center;
+}
+
+button {
+  background-color: var(--control);
+  color: var(--chalk_white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid var(--control-border);
+  border-radius: 5px;
+}
+
+svg {
+  max-width: 400px;
+  outline: 1px solid var(--target);
+}
+
+#circle-icon {
+  fill: var(--coral_pink);
+}
+
+#rectangle-icon {
+  fill: var(--fresh_green);
+}
+
+#triangle-icon {
+  fill: var(--royal_purple);
+}
