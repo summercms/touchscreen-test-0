@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Speech Synthesis on Icons</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
+  <script type="module" src="./main.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Speech Synthesis on Icons</h1>
+  </header>
+  <main>
+    <p>Hover over an icon to hear the label.</p>
+    <svg id="icon-targets" viewBox="0 0 200 280">
+      <circle id="circle-icon" cx="100" cy="50" r="20" aria-label="Circle" />
+      <rect id="rectangle-icon" x="30" y="100" width="40" height="60" aria-label="Rectangle" />
+      <polygon id="triangle-icon" points="150,200 173,240 127,240" aria-label="Triangle" />
+    </svg>
+  </main>
+</body>
+</html>
